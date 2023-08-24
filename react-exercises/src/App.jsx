@@ -6,11 +6,12 @@ import { Exercise_4 } from './components/exercise_4/Exercise_4'
 import { Exercise_5 } from './components/exercise_5/Exercise_5'
 import { Exercise_6 } from './components/exercise_6/Exercise_6'
 import { Exercise_7 } from './components/exercise_7/Exercise_7'
+import { Exercise_8 } from './components/exercise_8/Exercise_8'
 
 function App() {
   return (
     <>
-      <Exercise_7 />
+      <Exercise_8 />
     </>
   )
 }
