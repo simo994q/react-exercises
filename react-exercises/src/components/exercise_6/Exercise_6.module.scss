@@ -1,0 +1,12 @@
+.itemContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid gray;
+    width: 100px;
+
+    p {
+        display: inline;
+    }
+}
