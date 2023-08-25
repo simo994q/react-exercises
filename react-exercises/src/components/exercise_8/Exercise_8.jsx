@@ -6,18 +6,14 @@ export function Exercise_8() {
     const URL = 'https://v2.jokeapi.dev/joke/Programming?type=twopart&amount=10'
 
     const [jokeData, setJokeData] = useState()
-
+ 
     useEffect(() => {
         fetch(URL).then(res => res.json()).then(data => setJokeData(data))
-    }, [])
-
-    useEffect(() => {
-        console.log(jokeData);
-    }, [jokeData])
+    }, [URL])
 
     return (
         <div className={style.container}>
-            {jokeData.jokes.map((joke, index) => {
+            {jokeData && jokeData.jokes.map((joke, index) => {
                 return (
                     <div key={index}>
                         <p>{joke.setup}</p>
